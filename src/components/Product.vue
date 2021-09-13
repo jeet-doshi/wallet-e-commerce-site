@@ -5,7 +5,7 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="Images/logo-without-bg.png">
+                <img src="Images/logo-without-bg.png" class="header-logo">
             </div>
         <nav>
             <ul>
@@ -164,11 +164,88 @@ window.addEventListener("resize", slideImage);
 
 
 <style>
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+
+/* CSS FOR HEADER */
+.header{
+    background: #ba0e44;
+    height: 10%;
+    width: 100%;
+    color: #dff9f6;
+
+}
+
+.logo {
+    margin-left: 0px;
+    /* background-color: #ba0e44; */
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ba0e44;
+}
+nav{
+    flex: 1;
+    text-align: right;
+     background-color: #ba0e44;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    justify-content: center;
+     background-color: #ba0e44;
+    
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    background-color: #ba0e44;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding: 20px;
+    background-color: #ba0e44;
+}
+
+a:hover {
+    background-color: #dff9f6;
+    color: #ba0e44;;
+    border-radius: 18px;
+}
+
+.cart {
+     background-color: #ba0e44;
+}
+.cart:hover {
+    background-color: white;
+    border-radius: 18px;
+}
+
+.container{
+    max-width: 1700px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #ba0e44;
+}
+
+
+/* CSS for Product Details  */
 .card-wrapper{
     max-width: 1100px;
     margin: 0 auto;
 }
-img{
+.card-wrapper img{
     width: 100%;
     display: block;
 }
@@ -354,5 +431,67 @@ img{
     .product-content{
         padding-top: 0;
     }
+}
+
+/* CSS FOR FOOTER */
+.container2{
+    display: flex;
+    width:100%;
+    background-color: DIMGREY;
+    margin-top: 5px;
+}
+.footer{
+    width: 100%;
+    height: 225px;
+    /* margin-top: 750px; */
+    background-color: DIMGREY;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_child{
+    height: 200px;
+    width: 25%;
+    margin-left: 20px;
+    font-family: segoe UI;
+    display: flex;
+    justify-content: center;
+    background-color: DIMGREY;
+}
+.footer_child_1{
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    background-color: DIMGREY;
+    flex-direction: column;
+}
+
+.footer_child_4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: DIMGREY;
+}
+
+.first{
+    font-size: 22px;
+}
+
+.footer_child ul {
+    margin-top: 40px;
+    background-color: DIMGREY;
+}
+
+.footer_child li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: white;
+    background-color:DIMGREY;
+}
+
+.linker:hover{
+    color: orange;
+    cursor: pointer;
+
 }
 </style>
