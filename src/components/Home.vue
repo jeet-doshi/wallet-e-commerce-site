@@ -3,6 +3,7 @@
     <div class="container">
     <div class="navbar">
         <div class="logo">
+            <img src="/Images/Logo.png">
             <!-- <img src="" width="125px">   -->
         </div>
         <nav>
