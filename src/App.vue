@@ -7,12 +7,14 @@
 <script>
 import Home from './components/Home.vue'
 import Product from './components/Product.vue'
+import Checkout from './components/Checkout.vue'
 
 export default {
   name: 'App',
   components:{ 
     Home,
-    Product
+    Product,
+    Checkout
   }
 }
 </script>
