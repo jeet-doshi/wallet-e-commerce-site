@@ -1,4 +1,4 @@
-# e-commerce
+# wallet-e-commerce-site
 
 ## Project setup
 ```
