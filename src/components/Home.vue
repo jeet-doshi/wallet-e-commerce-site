@@ -17,7 +17,7 @@
             </ul>
         </nav>
         <img src="Images/Cart.png" class="cart">
-        <div style="margin-top: 50px; font-weight: bold;  background-color: #ba0e44;">  <h3 style=" background-color: #ba0e44;"> (0) </h3>  </div>
+        <div style="margin-top: 50px; font-weight: bold;  background-color: #ba0e44;">  <h3 style=" background-color: #ba0e44; color: black;"> (0) </h3>  </div>
     </div>
     </div>
 </div>
@@ -43,7 +43,7 @@
                 <h4>₹3,695</h4>
                 
            </div>
-           <button class="btn">Add To Cart</button>
+           <button class="btn" @click="goToProduct()">Add To Cart</button>
            <!-- <pre>Save ₹1,063 (29%) </pre> -->
        </div>
        <!-- Product Two -->
@@ -189,10 +189,10 @@
     <div class="footer_child">
         <ul>
             <li class="first">Quick Links</li>
-            <li>Home</li>
-            <li>Products</li>
-            <li>About Us</li>
-            <li>Cart</li>
+            <li class="linker">Home</li>
+            <li class="linker">Products</li>
+            <li class="linker">About Us</li>
+            <li class="linker">Cart</li>
         </ul>
     </div>
     <div class="footer_child">
@@ -211,8 +211,24 @@
 
 <!-- Footer Ends -->
 </body>
-
 </template>
+
+
+<script>
+
+export default {
+  name: 'App',
+  components:{ 
+
+  }, 
+
+  methods: {
+      goToProduct() {
+          this.$router.push('/Product');
+      }
+  }
+}
+</script>
 
 <style>
 * {
@@ -220,7 +236,6 @@
     padding: 0px;
     border: 0px;
     box-sizing: border-box;
-    background-color: #dff9f6;
 }
 
 /* CSS FOR HEADER */
@@ -262,15 +277,15 @@ nav ul li{
 }
 a{
     text-decoration: none;
-    color: #dff9f6;;
+    color: black;
     font-size: 25px;
     padding: 20px;
     background-color: #ba0e44;
 }
 
 a:hover {
-    background-color: white;
-    color: red;
+    background-color: #dff9f6;
+    color: #ba0e44;;
     border-radius: 18px;
 }
 
@@ -294,13 +309,14 @@ a:hover {
 /* CSS FOR PRODUCT DISPLAY */
 .upperContainer{
     width: 100%;
-    height:450px;
+    height: 1250px;
     /* background-color:grey; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     /* color: black; */
+    background-color: #dff9f6;
 
 }
 .items{
@@ -316,7 +332,7 @@ a:hover {
     position: relative;   
 }
 .items:hover{
-    border-radius: 5% 5% 5% 5% / 5% 5% 5% 5% ;
+  border-radius: 5% 5% 5% 5% / 5% 5% 5% 5% ;
   box-shadow: 10px 10px rgba(0,0,0,.25);
   box-shadow: 23px 23px rgba(0,0,0,.15);
   transition: all .4s ease;
@@ -438,6 +454,7 @@ input[type='radio'] {
 
 span {
     color: black;
+    margin: 5px;
 }
  
  span:hover{
@@ -448,10 +465,12 @@ span {
 .btn{
     height: 30px;
     width:50%;
-    background-color: rgb(223, 223, 75);
+    background-color: #ba0e44;
     border-radius: 8px;
     font-size: medium;
     margin-top: 10px;
+    color: #dff9f6;
+    font-weight: bold;
 }
 .btn:hover{
     background-color: rgba(158, 160, 156, 0.2);
@@ -473,12 +492,12 @@ h2{
     display: flex;
     width:100%;
     background-color: DIMGREY;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 .footer{
     width: 100%;
     height: 225px;
-    margin-top: 750px;
+    /* margin-top: 750px; */
     background-color: DIMGREY;
     display: flex;
     flex-direction: row;
@@ -523,8 +542,9 @@ h2{
     color: white;
     background-color:DIMGREY;
 }
-.footer_child li:hover{
-    color:orange;
+
+.linker:hover{
+    color: orange;
     cursor: pointer;
 
 }
