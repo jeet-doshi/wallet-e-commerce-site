@@ -26,7 +26,7 @@
 <!-- Checkout Starts -->
 <div class="row">
     <div class="col-75">
-        <div class="container">
+        <div class="container2">
             <form id="validate" action="/action_page.php">
                 <div class="row">
                     <div class="col-50">
@@ -88,7 +88,7 @@
         </div>
     </div>
     <div class="col-25">
-        <div class="container">
+        <div class="container2">
             <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
             <p><a href="#">IPHONE 12 Pro Mac</a> <span class="price">$1500</span></p>
             <p><a href="#">SAMSUNG S21</a> <span class="price">$1500</span></p>
@@ -137,6 +137,74 @@
 </template>
 
 <style>
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+
+/* CSS FOR HEADER */
+.header{
+    background: #ba0e44;
+    height: 10%;
+    width: 100%;
+    color: #dff9f6;
+
+}
+
+.logo {
+    margin-left: 0px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    justify-content: center;
+    
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding: 20px;
+}
+
+a:hover {
+    background-color: #dff9f6;
+    color: #ba0e44;;
+    border-radius: 18px;
+}
+
+
+.cart:hover {
+    background-color: white;
+    border-radius: 18px;
+}
+
+.container{
+    max-width: 1700px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
+/* CSS for Checkout page */
 .error {
     color: red;
     border-color: red;
@@ -169,7 +237,7 @@
     padding: 0 16px;
 }
 
-.container {
+.container2 {
     background-color: #FFFFFF;
     padding: 3px 18px 13px 18px;
     border: 1px solid lightgrey;
@@ -215,7 +283,7 @@ label {
     background-color: #0CBABA;
 }
 
-a {
+.container2   a {
     color: #2196F3;
 }
 
@@ -240,4 +308,6 @@ span.price {
         margin-bottom: 20px;
     }
 }
+
+
 </style>
