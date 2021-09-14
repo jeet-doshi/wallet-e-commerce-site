@@ -72,10 +72,10 @@
       </div>
 
       <div class = "product-price">
-        <p class = "last-price">Old Price: <span>$257.00</span></p>
-        <p class = "new-price">New Price: <span>$249.00 (5%)</span></p>
+        <p class = "last-price">Old Price: <span>₹3,695</span></p>
+        <p class = "new-price">New Price: <span>₹2,632 (5%)</span></p>
       </div>
-
+      
       <div class = "product-detail">
         <h2>about this item: </h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
@@ -114,6 +114,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 <!-- Product Display Ends -->
 
