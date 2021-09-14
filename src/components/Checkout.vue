@@ -26,7 +26,7 @@
 <!-- Checkout Starts -->
 <div class="row">
     <div class="col-75">
-        <div class="container2">
+        <div class="container3">
             <form id="validate" action="/action_page.php">
                 <div class="row">
                     <div class="col-50">
@@ -68,7 +68,7 @@
                         <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
                         <label for="expmonth">Exp Month</label>
                         <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
-                        <div class="row">
+                        <div class="row2">
                             <div class="col-50">
                                 <label for="expyear">Exp Year</label>
                                 <input type="text" id="expyear" name="expyear" placeholder="2021" required>
@@ -88,7 +88,7 @@
         </div>
     </div>
     <div class="col-25">
-        <div class="container2">
+        <div class="container4">
             <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
             <p><a href="#">IPHONE 12 Pro Mac</a> <span class="price">$1500</span></p>
             <p><a href="#">SAMSUNG S21</a> <span class="price">$1500</span></p>
@@ -112,10 +112,10 @@
     <div class="footer_child">
         <ul>
             <li class="first">Quick Links</li>
-            <li>Home</li>
-            <li>Products</li>
-            <li>About Us</li>
-            <li>Cart</li>
+            <li class="linker">Home</li>
+            <li class="linker">Products</li>
+            <li class="linker">About Us</li>
+            <li class="linker">Cart</li>
         </ul>
     </div>
     <div class="footer_child">
@@ -131,7 +131,6 @@
     </div>
 </div>
 </div>
-
 <!-- Footer Ends -->
 </body>
 </template>
@@ -183,7 +182,7 @@ a{
     padding: 20px;
 }
 
-a:hover {
+nav a:hover {
     background-color: #dff9f6;
     color: #ba0e44;;
     border-radius: 18px;
@@ -215,17 +214,19 @@ a:hover {
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    margin: 0 -10px;
+    margin: 20px 5px;
 }
 
 .col-25 {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
+    margin-top: 10px;
 }
 
 .col-50 {
     -ms-flex: 50%; /* IE10 */
     flex: 50%;
+    margin-left: -12px;
 }
 
 .col-75 {
@@ -237,7 +238,7 @@ a:hover {
     padding: 0 16px;
 }
 
-.container2 {
+.container3 {
     background-color: #FFFFFF;
     padding: 3px 18px 13px 18px;
     border: 1px solid lightgrey;
@@ -260,7 +261,7 @@ label {
 }
 
 .icon-container {
-    margin-bottom: 20px;
+    margin-bottom: 45px;
     padding: 7px 0;
     font-size: 24px;
 }
@@ -283,7 +284,7 @@ label {
     background-color: #0CBABA;
 }
 
-.container2   a {
+p a {
     color: #2196F3;
 }
 
@@ -309,5 +310,65 @@ span.price {
     }
 }
 
+/* CSS FOR FOOTER */
+.container2{
+    display: flex;
+    width:100%;
+    background-color: DIMGREY;
+    margin-top: 5px;
+}
+.footer{
+    width: 100%;
+    height: 225px;
+    /* margin-top: 750px; */
+    background-color: DIMGREY;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_child{
+    height: 200px;
+    width: 25%;
+    margin-left: 20px;
+    font-family: segoe UI;
+    display: flex;
+    justify-content: center;
+    background-color: DIMGREY;
+}
+.footer_child_1{
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    background-color: DIMGREY;
+    flex-direction: column;
+}
 
+.footer_child_4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: DIMGREY;
+}
+
+.first{
+    font-size: 22px;
+}
+
+.footer_child ul {
+    margin-top: 40px;
+    background-color: DIMGREY;
+}
+
+.footer_child li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: white;
+    background-color:DIMGREY;
+}
+
+.linker:hover{
+    color: orange;
+    cursor: pointer;
+
+}
 </style>
