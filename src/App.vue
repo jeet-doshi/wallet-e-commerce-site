@@ -1,19 +1,22 @@
 <template>
   <div id="app">
-    <!-- <Home></Home> -->
-    <Product></Product>
+    <Home></Home>
+    <!-- <Product></Product> -->
+    <!-- <Checkout></Checkout> -->
   </div>
 </template>
 
 <script>
-// import Home from './components/Home.vue'
-import Product from './components/Product.vue'
+import Home from './components/Home.vue'
+// import Product from './components/Product.vue'
+// import Checkout from './components/Checkout.vue'
 
 export default {
   name: 'App',
   components:{ 
-    // Home,
-    Product
+    Home,
+    // Product,
+    // Checkout
   }
 }
 </script>

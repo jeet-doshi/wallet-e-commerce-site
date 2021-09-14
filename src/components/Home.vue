@@ -43,7 +43,7 @@
                 <h4>₹3,695</h4>
                 
            </div>
-           <button class="btn" @click="goToProduct">Add To Cart</button>
+           <button class="btn" @click="goToProduct()">Add To Cart</button>
            <!-- <pre>Save ₹1,063 (29%) </pre> -->
        </div>
        <!-- Product Two -->
@@ -224,7 +224,7 @@ export default {
 
   methods: {
       goToProduct() {
-          this.$router.push('/Product.vue');
+          this.$router.push('/Product');
       }
   }
 }
