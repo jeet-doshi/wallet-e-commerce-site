@@ -183,38 +183,31 @@ window.addEventListener("resize", slideImage);
 
 .logo {
     margin-left: 0px;
-    /* background-color: #ba0e44; */
 }
 .navbar{
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: #ba0e44;
 }
 nav{
     flex: 1;
     text-align: right;
-     background-color: #ba0e44;
 }
 nav ul{
     display: inline-block;
     list-style-type: none;
     justify-content: center;
-     background-color: #ba0e44;
     
 }
 nav ul li{
     display: inline-block;
     margin-right: 20px;
-    background-color: #ba0e44;
-
 }
 a{
     text-decoration: none;
     color: black;
     font-size: 25px;
     padding: 20px;
-    background-color: #ba0e44;
 }
 
 a:hover {
@@ -223,9 +216,7 @@ a:hover {
     border-radius: 18px;
 }
 
-.cart {
-     background-color: #ba0e44;
-}
+
 .cart:hover {
     background-color: white;
     border-radius: 18px;
@@ -236,7 +227,6 @@ a:hover {
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
-    background-color: #ba0e44;
 }
 
 
