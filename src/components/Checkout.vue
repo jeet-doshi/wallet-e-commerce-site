@@ -24,89 +24,80 @@
 <!-- Header Ends -->
 
 <!-- Checkout Starts -->
-<div class="min-h-screen bg-gray-300">
-  <div class="container mx-auto p-10 max-w-screen-lg">
-    <div class="bg-white rounded shadow p-8">
-      <!-- Order Summary  -->
-      <div>
-        <h3 class="text-xl mt-4 font-bold">Order Summary</h3>
-        <!--     BOX     -->
-        <div class="border w-full rounded mt-5 flex p-4 justify-between items-center flex-wrap">
-          <img src="Images/Horn-Rakhi-Gift-Hamper/Black.jpg   " class="w-12">
-          <div class="w-2/3">
-            <h3 class="text-lg font-medium">Black Jacket XL</h3>
-            <p class="text-gray-600 text-xs">Sold by <b>Aashir Khan</b></p>
-            <h4 class="text-red-700 text-xs font-bold mt-1">Only 2 left in stock</h4>
-          </div>
-          <div>
-            <h4 class="text-3xl font-medium"><sup class="text-lg text-purple-800">$</sup> 89</h4>
-            <h5 class="text-sm font-bold text-purple-800">60% OFF</h5>
-          </div>
-          <div class="w-full flex justify-between mt-4">
-            <button class="text-red-700 hover:bg-red-100 px-2">DELETE</button>
-            <label class="block uppercase tracking-wide text-gray-700" for="grid-first-name">
-              QTY
-              <select class="ml-3 text-sm bg-purple-700 border border-purple-200 text-white p-2 rounded leading-tight" id="grid-state">
-                <option>1</option>
-                <option>2</option>
-              </select>
-            </label>
-          </div>
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+            <form id="validate" action="/action_page.php">
+                <div class="row">
+                    <div class="col-50">
+                        <h3>Billing Address</h3>
+                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                        <input type="text" id="fname" name="fullname" placeholder="Soeng.Souy" required>
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email" placeholder="soeng.souy@gmail.com" required>
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                        <input type="text" id="adr" name="address" placeholder="110 W. 15th Phnom Penh" required>
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" id="city" name="city" placeholder="Phnom Penh" required>
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="Phnom Penh" required>
+                            </div>
+                            <div class="col-50">
+                                <label for="zip">Zip</label>
+                                <input type="text" id="zip" name="zip" placeholder="12000" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Cards</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="Soeng Souy" required>
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="2021" required>
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="352" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+                <input type="submit" value="Continue to checkout" class="btn">
+            </form>
         </div>
-        <div class="border w-full rounded mt-5 flex p-4 justify-between items-center flex-wrap">
-          <img src="Images/Horn-Rakhi-Gift-Hamper/Black.jpg   " class="w-12">
-          <div class="w-2/3">
-            <h3 class="text-lg font-medium">Black Hat</h3>
-            <p class="text-gray-600 text-xs">Sold by <b>Taha Dildar</b></p>
-            <h4 class="text-red-700 text-xs font-bold mt-1">Only 1 left in stock</h4>
-          </div>
-          <div>
-            <h4 class="text-3xl font-medium"><sup class="text-lg text-purple-800">$</sup> 20</h4>
-            <h5 class="text-sm font-bold text-purple-800">40% OFF</h5>
-          </div>
-          <div class="w-full flex justify-between mt-4">
-            <button class="text-red-700 hover:bg-red-100 px-2">DELETE</button>
-            <label class="block uppercase tracking-wide text-gray-700" for="grid-first-name">
-              QTY
-              <select class="ml-3 text-sm bg-purple-700 border border-purple-200 text-white p-2 rounded leading-tight" id="grid-state">
-                <option>1</option>
-                <option>2</option>
-              </select>
-            </label>
-          </div>
-        </div>
-      </div>
-      <button class="px-4 py-4 bg-purple-700 text-white w-full mt-3 rounded shadow font-bold hover:bg-purple-900">PROCEED TO CHECKOUT SCREEN</button>
     </div>
-    <div class="flex justify-between mt-8 flex-wrap lg:justify-center">
-      <div class="bg-white rounded shadow p-2 w-full lg:w-2/4">
-        <div class="w-full bg-orange-200 px-8 py-6">
-          <h3 class="text-2xl mt-4 font-bold">Price Breakdown</h3>
-          <div class="flex justify-between mt-3">
-            <div class="text-xl text-orange-900 font-bold">Amount</div>
-            <div class='text-xl text-right font-bold '>$102</div>
-          </div>
-          <div class="flex justify-between mt-3">
-            <div class="text-xl text-orange-900 font-bold">VAT (15%)</div>
-            <div class='text-xl text-right font-bold'>$12</div>
-          </div>
-          <div class="bg-orange-300 h-1 w-full mt-3"></div>
-          <div class="flex justify-between mt-3">
-            <div class="text-xl text-orange-900 font-bold">Total Amount</div>
-            <div class="text-2xl text-orange-900 font-bold">$114</div>
-          </div>
-          <button class="px-4 py-4 bg-purple-700 text-white w-full mt-3 rounded shadow font-bold hover:bg-purple- 900"> CHECKOUT</button>
+    <div class="col-25">
+        <div class="container">
+            <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+            <p><a href="#">IPHONE 12 Pro Mac</a> <span class="price">$1500</span></p>
+            <p><a href="#">SAMSUNG S21</a> <span class="price">$1500</span></p>
+            <p><a href="#">OPPO F14</a> <span class="price">$1400</span></p>
+            <p><a href="#">HUAWEI 20 Mac</a> <span class="price">$1200</span></p>
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>$12600</b></span></p>
         </div>
-      </div>
-      <div class="bg-white rounded shadow px-10 py-6 w-full mt-4 flex flex-wrap justify-center lg:w-2/4 lg:ml-3">
-        <div class="pr-8">
-        <h3 class="text-2xl mt-4 font-bold text-purple-900">Thank You!</h3>
-        <h4 class="text-sm text-gray-600 font-bold">ORDER #1234</h4>
-        </div>
-        <img src="https://image.flaticon.com/icons/svg/1611/1611768.svg" alt="" class="w-24">
-      </div>
     </div>
-  </div>
 </div>
 <!-- Checkout Ends -->
 
@@ -143,5 +134,110 @@
 
 <!-- Footer Ends -->
 </body>
-
 </template>
+
+<style>
+.error {
+    color: red;
+    border-color: red;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+}
+
+.col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+}
+
+.col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+}
+
+.col-25,.col-50,.col-75 {
+    padding: 0 16px;
+}
+
+.container {
+    background-color: #FFFFFF;
+    padding: 3px 18px 13px 18px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    box-shadow: 0 0 2rem 0 rgba(168, 180, 194, 0.37);
+}
+
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid rgb(130, 26, 26);
+    border-radius: 1px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.btn {
+    background-color: #01BAEF;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: 0 0 1rem 0 rgba(99, 123, 150, 0.329);
+
+}
+
+.btn:hover {
+    background-color: #0CBABA;
+}
+
+a {
+    color: #2196F3;
+}
+
+hr {
+    border: 1px solid lightgrey;
+}
+
+span.price {
+    float: right;
+    color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns 
+    stack on top of each other instead of next to each other (also change the direction 
+    - make the "cart" column go on top) 
+*/
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+    .col-25 {
+        margin-bottom: 20px;
+    }
+}
+</style>
