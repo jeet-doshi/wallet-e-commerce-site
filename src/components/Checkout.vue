@@ -67,13 +67,8 @@
                         <label for="ccnum">Credit card number</label>
                         <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
                         <label for="expmonth">Exp Month</label>
-<<<<<<< HEAD
                         <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
                         <div class="row2">
-=======
-                        <input type="text" id="expmonth" name="expmonth" placeholder="month" required>
-                        <div class="row">
->>>>>>> 04049b2d63e5320a8f5df922eccbefeb4fac4edf
                             <div class="col-50">
                                 <label for="expyear">Exp Year</label>
                                 <input type="text" id="expyear" name="expyear" placeholder="year" required>
