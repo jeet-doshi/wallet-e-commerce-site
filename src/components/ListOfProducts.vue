@@ -9,7 +9,7 @@
         </h2>
       </router-link>
       <div class="product-price">
-        <span>Rs {{ product.price }}</span>
+        <span style="color: red;">New Price: <strong> Rs {{ product.price }} </strong> </span>
         <span>Rs <strike>{{ product.orgprice }}</strike></span>
       </div>
 
@@ -57,6 +57,9 @@ export default {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .product {
@@ -71,6 +74,7 @@ export default {
     align-items: center;
     border-radius: 7px;
     border:solid black;
+    margin-top: 30px;
   }
 
   .product:hover{

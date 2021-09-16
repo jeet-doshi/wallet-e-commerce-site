@@ -26,6 +26,8 @@ import mainMenu from './components/Menu';
 import btn from './components/Btn';
 import popupcart from './components/Popupcart';
 import maskBg from './components/Mask';
+// import footer from './components/Footer.vue'
+
 
 export default {
   components: {
@@ -69,6 +71,7 @@ export default {
 
   .container {
     width: 100%;
+    background-color: #dff9f6;
   }
 
   .cart {

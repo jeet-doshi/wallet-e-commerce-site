@@ -1,7 +1,7 @@
 <template>
   <button :class="btnColor">
     <slot></slot>
-    <img v-if="cartIcon" src="../assets/images/cart.svg" alt="Cart Icon">
+    <img v-if="cartIcon" src="../assets/images/cart.svg" alt="Cart Icon" >
   </button>
 </template>
 
@@ -36,11 +36,11 @@ export default {
   }
 
   .btn-info {
-    background-color: #2D9CDB;
+    background-color: darkblue;
   }
 
   .btn-sucess {
-    background-color: #27AE60;
+    background-color: #ba0e44;
   }
 
   .btn-danger {

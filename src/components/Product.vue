@@ -8,13 +8,22 @@
       <h2 class="product-title">{{ currentProduct.name }}</h2>
       <span class="product-price">Rs {{ currentProduct.price }}</span>
       <span class="product-orgprice">Rs <strike>{{ currentProduct.orgprice }}</strike></span>
-      <btn btnColor="btn btn-large btn-sucess" :cartIcon="true"
-      @click.native="addProductToCart(currentProduct)">
-        Buy Now
-      </btn>
+      <div style="margin-top: 10px;"> Available Colors: </div>
+      <div class="color-options">
+        <!-- <div> Colors: </div> -->
+        <div class="figure black"></div>
+        <div class="figure blue"></div>
+        <div class="figure green"></div>
+        <div class="figure brown"></div>
+      </div>
+
       <btn btnColor="btn btn-large btn-info"
           @click.native="openModal()">
         More Info
+      </btn>  
+      <btn btnColor="btn btn-large btn-sucess" :cartIcon="true"
+      @click.native="addProductToCart(currentProduct)">
+        Buy Now
       </btn>
     </div>
     <modal>{{ currentProduct.details }}</modal>
@@ -98,4 +107,37 @@ export default {
     width: 300px;
     margin: .3em 0;
   }
+
+.color-options {
+  height: 50px;
+  /* background-color: red; */
+  display: flex;
+}
+
+.figure {
+  background-color: green;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.black {
+  background-color: black;
+}
+
+.blue {
+  background-color: ROYALBLUE;
+}
+
+.green {
+  background-color: olivedrab;
+}
+
+.brown {
+  background-color: brown ;
+}
+
+
 </style>

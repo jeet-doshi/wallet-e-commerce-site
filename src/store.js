@@ -25,7 +25,7 @@ export default new Vuex.Store({
         details: 'TOP GRAIN LEATHER MENS WALLET LEATHER: This Wallet for men leather stylish Made in Exclusive High Quality Leather, Well Designed wallet men stylish leather By Skilled Handcraft Man, Durable Cloth Lining Used, Designed To Accommodate maximum needs. Each RFID Wallets for men Has Unique Natural Grain Of Genuine Leather Wallet for Men',
       },
       {
-        name: 'Hornbull Billy Mens wallet with pen and keychain',
+        name: 'HB Billy Mens wallet with pen',
         price: 1400,
         orgprice: 2000,
         image: 'https://i.imgur.com/GZ7pqgT.jpg',
@@ -34,7 +34,7 @@ export default new Vuex.Store({
         details: 'TOP GRAIN LEATHER MENS WALLET LEATHER: This Wallet for men leather stylish Made in Exclusive High Quality Leather, Well Designed wallet men stylish leather By Skilled Handcraft Man, Durable Cloth Lining Used, Designed To Accommodate maximum needs. Each RFID Wallets for men Has Unique Natural Grain Of Genuine Leather Wallet for Men',
       },
       {
-        name: 'Hornbull Buttler Mens wallet with pen and keychain',
+        name: 'HB Buttler Mens wallet with pen',
         price: 2300,
         orgprice: 2500,
         image: 'https://i.imgur.com/qcyuUQK.jpg',
@@ -52,7 +52,7 @@ export default new Vuex.Store({
         details: 'TOP GRAIN LEATHER MENS WALLET LEATHER: This Wallet for men leather stylish Made in Exclusive High Quality Leather, Well Designed wallet men stylish leather By Skilled Handcraft Man, Durable Cloth Lining Used, Designed To Accommodate maximum needs. Each RFID Wallets for men Has Unique Natural Grain Of Genuine Leather Wallet for Men',
       },
       {
-        name: 'Hornbull Label Mens wallet with pen and keychain',
+        name: 'HB Label Mens wallet with pen',
         price: 1400,
         orgprice: 2000,
         image: 'https://i.imgur.com/QlsBLkw.jpg',
@@ -79,7 +79,7 @@ export default new Vuex.Store({
         details: 'TOP GRAIN LEATHER MENS WALLET LEATHER: This Wallet for men leather stylish Made in Exclusive High Quality Leather, Well Designed wallet men stylish leather By Skilled Handcraft Man, Durable Cloth Lining Used, Designed To Accommodate maximum needs. Each RFID Wallets for men Has Unique Natural Grain Of Genuine Leather Wallet for Men',
       },
       {
-        name: 'Hornbull Billy Navy/Mud Mens Leather Wallet',
+        name: 'HB Billy Mens Leather Wallet',
         price: 1700,
         orgprice: 2000,
         image: 'https://i.imgur.com/OkBn8OV.jpg',
