@@ -2,7 +2,7 @@
     <div class="footer">
 <div class="container2">
     <div class="footer_child footer_child_1">
-        <img src="Images/logo-without-bg.png" width="300px" height="100px">
+        <img src="https://i.imgur.com/ruPamPO.png" width="300px" height="100px">
         <br />
         <!-- <h1>Wallet Town</h1> -->
     </div>

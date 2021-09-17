@@ -17,7 +17,7 @@
     <h3 class="total" v-if="hasProduct()">
       Total: Rs {{ totalPrice() }}
     <button class="paybtn">
-          <router-link to="/payment">Payment</router-link>
+          <router-link to="/payment">Checkout</router-link>
     </button>
     </h3>
   </div>

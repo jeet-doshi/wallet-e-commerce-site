@@ -22,18 +22,25 @@
         <input id="address" type="address" value="Address">
       </form>
       <div class="payment">
-        <h4>Payment Amount :<div class ="amount"> Rs.</div></h4>
+        <h4>Payment Amount :<div class ="amount"> Rs. {{ totalPrice() }}</div></h4>
         <!-- <h3 class="total" v-if="hasProduct()">
           Total: Rs {{ totalPrice() }}
         </h3> -->
-        <button>Pay</button>
+        <button v-on:click="popUp">Pay</button>
         </div>
     </div>
   </div>
 </div>
 </template>
 <script>
+import { mapGetters } from 'vuex';
+
 export default{
+  computed: {
+    ...mapGetters([
+      'getProductsInCart',
+    ]),
+  },
   methods: {
     hasProduct() {
       return this.getProductsInCart.length > 0;
@@ -41,6 +48,10 @@ export default{
     totalPrice() {
       return this.getProductsInCart.reduce((current, next) =>
         current + next.price, 0);
+    },
+    popUp() {
+      // eslint-disable-next-line
+      alert('Payment successful! Thank you.');
     },
   },
 };
@@ -64,7 +75,7 @@ body{
   background-color: white;
   border: 2px solid #6200EA;
   width: 450px;
-  height: 350px;
+  height: 380px;
   box-shadow: 0px 8px 60px -10px white;
   border-radius: 10px;
   padding:70px;
