@@ -19,8 +19,7 @@
         <router-view></router-view>
       </transition>
       <!-- <maskBg v-if="getPopupCart" @click.native="showPopupCart()"/> -->
-      <!--    <footer-section> </footer-section>-->
-      <div style="background-color: #ba0e44; width: 100%">Hello</div>
+          <footer-section> </footer-section>
     </div>
   </section>
 </template>
