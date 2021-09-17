@@ -3,7 +3,6 @@
   <div class="product-box">
     <div class="product-image">
       <img :src="currentProduct.image" alt="" width="300px" height="300px">
-      <stars :rate="rated(currentProduct.stars)" :totalReviews="currentProduct.totalReviews"/>
     </div>
     <div class="product-info">
       <h2 class="product-title">{{ currentProduct.name }}</h2>
