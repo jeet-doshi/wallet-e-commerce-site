@@ -16,6 +16,9 @@
     </div>
     <h3 class="total" v-if="hasProduct()">
       Total: Rs {{ totalPrice() }}
+    <button>
+          <router-link to="/payment">Payment</router-link>
+    </button>
     </h3>
   </div>
 </template>
@@ -120,4 +123,14 @@ export default {
     transform: translateX(-40px);
     opacity: 0;
   }
+  .button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 </style>

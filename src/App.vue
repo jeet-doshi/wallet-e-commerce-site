@@ -26,6 +26,7 @@ import mainMenu from './components/Menu';
 import btn from './components/Btn';
 import popupcart from './components/Popupcart';
 import maskBg from './components/Mask';
+import payment from './components/Payment';
 
 export default {
   components: {
@@ -33,6 +34,7 @@ export default {
     btn,
     popupcart,
     maskBg,
+    payment,
   },
   methods: {
     ...mapActions([

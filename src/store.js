@@ -89,6 +89,45 @@ export default new Vuex.Store({
       },
     ],
 
+    suggestedproducts: [
+      {
+        name: 'Hornbull Billy Navy/Mud Mens Leather Wallet',
+        price: 1700,
+        orgprice: 2000,
+        image: 'https://i.imgur.com/OkBn8OV.jpg',
+        stars: 2,
+        totalReviews: 248,
+        details: 'TOP GRAIN LEATHER MENS WALLET LEATHER: This Wallet for men leather stylish Made in Exclusive High Quality Leather, Well Designed wallet men stylish leather By Skilled Handcraft Man, Durable Cloth Lining Used, Designed To Accommodate maximum needs. Each RFID Wallets for men Has Unique Natural Grain Of Genuine Leather Wallet for Men',
+      },
+      {
+        name: 'Hornbull Benial Mens wallet',
+        price: 2200,
+        orgprice: 2500,
+        image: 'https://i.imgur.com/UyZcIlE.jpg',
+        stars: 3.4,
+        totalReviews: 20,
+        details: 'TOP GRAIN LEATHER MENS WALLET LEATHER: This Wallet for men leather stylish Made in Exclusive High Quality Leather, Well Designed wallet men stylish leather By Skilled Handcraft Man, Durable Cloth Lining Used, Designed To Accommodate maximum needs. Each RFID Wallets for men Has Unique Natural Grain Of Genuine Leather Wallet for Men',
+      },
+      {
+        name: 'Wildhorn Carter Mens wallet',
+        price: 1400,
+        orgprice: 2500,
+        image: 'https://i.imgur.com/9RC8c9C.jpg',
+        stars: 2,
+        totalReviews: 248,
+        details: 'TOP GRAIN LEATHER MENS WALLET LEATHER: This Wallet for men leather stylish Made in Exclusive High Quality Leather, Well Designed wallet men stylish leather By Skilled Handcraft Man, Durable Cloth Lining Used, Designed To Accommodate maximum needs. Each RFID Wallets for men Has Unique Natural Grain Of Genuine Leather Wallet for Men',
+      },
+      {
+        name: 'Hornbull Billy Mens wallet with pen and keychain',
+        price: 1400,
+        orgprice: 2000,
+        image: 'https://i.imgur.com/GZ7pqgT.jpg',
+        stars: 1,
+        totalReviews: 1,
+        details: 'TOP GRAIN LEATHER MENS WALLET LEATHER: This Wallet for men leather stylish Made in Exclusive High Quality Leather, Well Designed wallet men stylish leather By Skilled Handcraft Man, Durable Cloth Lining Used, Designed To Accommodate maximum needs. Each RFID Wallets for men Has Unique Natural Grain Of Genuine Leather Wallet for Men',
+      },
+    ],
+
     cartProducts: [],
     currentProduct: {},
     showModal: false,
@@ -101,6 +140,7 @@ export default new Vuex.Store({
     getCurrentProduct: state => state.currentProduct,
     getShowModal: state => state.showModal,
     getPopupCart: state => state.showPopupCart,
+    getSuggestedproducts: state => state.suggestedproducts,
   },
 
   mutations: {

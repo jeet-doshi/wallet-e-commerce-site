@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="product-box">
     <div class="product-image">
       <img :src="currentProduct.image" alt="" width="300px" height="300px">
@@ -19,6 +20,28 @@
     </div>
     <modal>{{ currentProduct.details }}</modal>
   </div>
+
+  <ul class="listOfProducts">
+    <li v-for="(product, index) in suggestedproducts" :key="index" class="product">
+      <img :src="product.image" alt="" height="300px" width="300px">
+      <router-link to="/product-details">
+        <h2 class="product-name"
+            @click="addCurrentProduct(product)">
+          {{ product.name }}
+        </h2>
+      </router-link>
+      <div class="product-price">
+        <span>Rs {{ product.price }}</span>
+        <span>Rs <strike>{{ product.orgprice }}</strike></span>
+      </div>
+      <btn btnColor="btn btn-large btn-sucess"
+          :cartIcon="true"
+          @click.native="addProductToCart(product)">
+        Add to cart
+      </btn>
+    </li>
+  </ul>
+</div>
 </template>
 
 <script>
@@ -27,6 +50,7 @@ import btn from './Btn';
 import modal from './Modal';
 
 export default {
+  props: ['suggestedproducts'],
   components: {
     btn,
     modal,
@@ -97,5 +121,14 @@ export default {
   .product-box button {
     width: 300px;
     margin: .3em 0;
+  }
+   .listOfProducts {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
   }
 </style>
