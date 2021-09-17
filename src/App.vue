@@ -61,7 +61,7 @@ export default {
   @import url('https://fonts.googleapis.com/css?family=Roboto');
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: #FAFAFA;
+    background-color: #dff9f6;
   }
 
   a {
