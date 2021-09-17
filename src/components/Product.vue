@@ -1,6 +1,6 @@
 <template>
 <div>
-<div>
+<div class="wrap-body">
   <div class="product-box">
     <div class="product-image">
       <img :src="currentProduct.image" alt="" width="300px" height="300px">
@@ -51,12 +51,12 @@
     </li>
   </ul>
 </div>
-<div class="footer">
+<!-- <div class="footer">
 <div class="container2">
     <div class="footer_child footer_child_1">
         <img src="https://i.imgur.com/ruPamPO.png" width="300px" height="100px">
         <br />
-        <!-- <h1>Wallet Town</h1> -->
+        <h1>Wallet Town</h1>
     </div>
     <div class="footer_child">
         <ul>
@@ -80,8 +80,8 @@
             <li>enquiry@wallettown.com</li>
         </ul>
     </div>
-</div>
-</div>
+</div> 
+</div> -->
 </div>
 </template>
 
@@ -201,6 +201,7 @@ export default {
     width:100%;
     background-color: DIMGREY;
     margin-top: 5px;
+    margin-left: 350px;
 }
 .footer{
     width: 100%;
@@ -210,6 +211,8 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    bottom: 0px;
+    position: fixed;
 }
 .footer_child{
     height: 200px;

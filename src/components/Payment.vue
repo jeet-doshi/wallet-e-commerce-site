@@ -32,12 +32,12 @@
     </div>
   </div>
 </div>
-<div class="footer">
+<!-- <div class="footer">
 <div class="container2">
     <div class="footer_child footer_child_1">
         <img src="https://i.imgur.com/ruPamPO.png" width="300px" height="100px">
         <br />
-        <!-- <h1>Wallet Town</h1> -->
+        <h1>Wallet Town</h1>
     </div>
     <div class="footer_child">
         <ul>
@@ -62,9 +62,10 @@
         </ul>
     </div>
 </div>
-</div>
+</div> -->
 </div>
 </template>
+
 <script>
 import { mapGetters } from 'vuex';
 
@@ -113,6 +114,7 @@ body{
   border-radius: 10px;
   padding:70px;
   padding-top:10px;
+  margin-top: -100px;
 }
 .content{
   padding-top:10px;
@@ -236,6 +238,7 @@ button{
     width:100%;
     background-color: DIMGREY;
     margin-top: 5px;
+    margin-left: 350px;
 }
 .footer{
     width: 100%;
@@ -245,6 +248,8 @@ button{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    bottom: 0px;
+    position: fixed;
 }
 .footer_child{
     height: 200px;

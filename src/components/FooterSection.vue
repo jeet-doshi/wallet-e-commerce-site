@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  name: 'FooterSection',
+  name: 'footer',
 };
 </script>
 

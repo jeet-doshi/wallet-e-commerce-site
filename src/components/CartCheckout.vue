@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="wrap-body">
   <div class="checkout-box">
     <ul class="checkout-list">
       <transition-group name="fade">
@@ -24,12 +24,13 @@
     </button>
     </h3>
   </div>
-  <div class="footer">
+  
+  <!-- <div class="footer">
 <div class="container2">
     <div class="footer_child footer_child_1">
         <img src="https://i.imgur.com/ruPamPO.png" width="300px" height="100px">
         <br />
-        <!-- <h1>Wallet Town</h1> -->
+        <h1>Wallet Town</h1>
     </div>
     <div class="footer_child">
         <ul>
@@ -54,7 +55,7 @@
         </ul>
     </div>
 </div>
-</div>
+</div> -->
 </div>
 </template>
 
@@ -95,6 +96,7 @@ export default {
     margin: 50px auto;
     box-sizing: border-box;
     padding: 1em;
+    height: 1000px
   }
 
   .checkout-list {
@@ -172,11 +174,15 @@ export default {
   a{
     color: white;
   }
+
+  /* CSS for footer */
 .container2{
     display: flex;
     width:100%;
     background-color: DIMGREY;
     margin-top: 5px;
+    margin-left: 350px;
+    position: static;
 }
 .footer{
     width: 100%;
@@ -186,6 +192,8 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    bottom: 0px;
+    position: fixed;
 }
 .footer_child{
     height: 200px;

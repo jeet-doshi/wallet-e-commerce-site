@@ -12,11 +12,13 @@
       <transition name="appear">
         <popupcart class="cart" v-if="getPopupCart"/>
       </transition>
+      <maskBg v-if="getPopupCart" @click.native="showPopupCart()"/>
     </mainMenu>
-    <transition name="leave">
-      <router-view></router-view>
+    <transition name="leave" >
+        <router-view class="router-content"></router-view>
     </transition>
-    <maskBg v-if="getPopupCart" @click.native="showPopupCart()"/>
+    <!-- <maskBg v-if="getPopupCart" @click.native="showPopupCart()"/> -->
+    <footer-section> </footer-section>
   </div>
 </template>
 
@@ -27,6 +29,7 @@ import btn from './components/Btn';
 import popupcart from './components/Popupcart';
 import maskBg from './components/Mask';
 import payment from './components/Payment';
+import FooterSection from './components/FooterSection.vue';
 
 export default {
   components: {
@@ -35,6 +38,7 @@ export default {
     popupcart,
     maskBg,
     payment,
+    FooterSection,
   },
   methods: {
     ...mapActions([
@@ -59,9 +63,14 @@ export default {
 <style>
   @import './assets/css/normalize.css';
   @import url('https://fonts.googleapis.com/css?family=Roboto');
+  html {
+    height: 100%;
+  }
+  
   body {
     font-family: 'Roboto', sans-serif;
     background-color: #dff9f6;
+    height: 100%;
   }
 
   a {
@@ -72,6 +81,10 @@ export default {
   .container {
     width: 100%;
     background-color: #dff9f6;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .cart {
@@ -119,5 +132,10 @@ export default {
       transform: translateY(0%);
       opacity: 1;
     }
+  }
+
+  .router-content {
+    height: 100%;
+    background-color: #000;
   }
 </style>

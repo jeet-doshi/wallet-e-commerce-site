@@ -22,12 +22,12 @@
     </li>
   </ul>
   <!-- Footer -->
-  <div class="footer">
+  <!-- <div class="footer">
 <div class="container2">
     <div class="footer_child footer_child_1">
         <img src="https://i.imgur.com/ruPamPO.png" width="300px" height="100px">
         <br />
-        <!-- <h1>Wallet Town</h1> -->
+        <h1>Wallet Town</h1>
     </div>
     <div class="footer_child">
         <ul>
@@ -52,7 +52,7 @@
         </ul>
     </div>
 </div>
-</div>
+</div> -->
 </div>
 </template>
 
@@ -142,6 +142,7 @@ export default {
     width:100%;
     background-color: DIMGREY;
     margin-top: 5px;
+    margin-left: 350px;
 }
 .footer{
     width: 100%;
