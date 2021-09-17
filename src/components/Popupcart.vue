@@ -1,11 +1,13 @@
 <template>
   <div class="box">
     <span v-if="!hasProduct()">No products </span>
-    <div v-for="(product, index) in getProductsInCart"  :key="index" class="box-item">
-      <img :src="product.image" alt="" class="item-thumb">
-      <h3 class="item-name">{{ product.name }}</h3>
-      <span class="item-amount">Amount: 1</span>
-      <span class="item-price">Rs {{ product.price }}</span>
+    <div class="box_scroller">
+      <div v-for="(product, index) in getProductsInCart"  :key="index" class="box-item">
+        <img :src="product.image" alt="" class="item-thumb">
+        <h3 class="item-name">{{ product.name }}</h3>
+        <span class="item-amount">Amount: 1</span>
+        <span class="item-price">Rs {{ product.price }}</span>
+      </div>
     </div>
     <div class="cart-info" v-if="hasProduct()">
       <span>Total: Rs {{ totalPrice() }}</span>
@@ -53,7 +55,6 @@ export default {
 <style scoped>
   .box {
     width: 400px;
-    height: auto;
     background-color: #FAFAFA;
     box-shadow: 0px 0px 10px rgba(73, 74, 78, 0.1);
     border-radius: 5px;
@@ -61,6 +62,10 @@ export default {
     padding: 1em .5em;
     position: absolute;
     z-index: 1;
+  }
+  .box_scroller {
+    max-height: 500px;
+    overflow-y: scroll;
   }
 
   .box:after {

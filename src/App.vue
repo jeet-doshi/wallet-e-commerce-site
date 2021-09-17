@@ -12,7 +12,7 @@
       <transition name="appear">
         <popupcart class="cart" v-if="getPopupCart"/>
       </transition>
-      <maskBg v-if="getPopupCart" @click.native="showPopupCart()"/>
+      <MaskBasket v-if="getPopupCart" @click.native="showPopupCart()"/>
     </mainMenu>
     <transition name="leave" >
         <router-view class="router-content"></router-view>
@@ -27,16 +27,16 @@ import { mapGetters, mapActions } from 'vuex';
 import mainMenu from './components/Menu';
 import btn from './components/Btn';
 import popupcart from './components/Popupcart';
-import maskBg from './components/Mask';
 import payment from './components/Payment';
 import FooterSection from './components/FooterSection';
+import MaskBasket from './components/MaskBasket';
 
 export default {
   components: {
+    MaskBasket,
     mainMenu,
     btn,
     popupcart,
-    maskBg,
     payment,
     FooterSection,
   },
@@ -69,7 +69,7 @@ export default {
   body {
     font-family: 'Roboto', sans-serif;
     background-color: #dff9f6;
-    height: 100%;
+    /*height: 100%;*/
   }
 
   a {
