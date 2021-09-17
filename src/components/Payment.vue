@@ -18,6 +18,8 @@
       <!--  <label>Expiration Date</label>-->
         <input type="month" value="2021-10">
         <input type="user" value="123">
+        <!--   <label>Address</label>-->
+        <input id="address" type="address" value="Address">
       </form>
       <div class="payment">
         <h4>Payment Amount :<div class ="amount"> Rs.</div></h4>
@@ -111,6 +113,14 @@ input[type=user] {
   background-repeat: no-repeat;
   padding-left: 42px;
 }
+input[type=address] {
+  background-color: white;
+  background-image: url('https://i.imgur.com/tEKJ9DX.jpg');
+  background-position:5px 5px;
+  background-size:9%;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
 
 input{
   width:100%;
@@ -136,7 +146,8 @@ button{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  cursor:pointer;
+  cursor: pointer;
+  border-radius: 5px;
 }
 /*credit card*/
 .card{
