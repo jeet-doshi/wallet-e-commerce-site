@@ -9,10 +9,12 @@
     <div class="footer_child">
         <ul>
             <li class="first">Quick Links</li>
-            <li class="linker">Home</li>
-            <li class="linker">Products</li>
-            <li class="linker">About Us</li>
-            <li class="linker">Cart</li>
+            <li>
+                <router-link to="./" class="linker">All Products</router-link>
+            </li>
+            <li>
+                <router-link to="./checkout" class="linker">Cart</router-link>
+            </li>
         </ul>
     </div>
     <div class="footer_child">
@@ -43,6 +45,7 @@ export default {
     width:100%;
     background-color: DIMGREY;
     margin-top: 5px;
+    margin-left: 350px;
 }
 .footer{
     width: 100%;
@@ -93,9 +96,12 @@ export default {
     background-color:DIMGREY;
 }
 
-.linker:hover{
-    color: orange;
-    cursor: pointer;
+.linker{
+    color: white;
+}
 
+.linker:hover{
+    cursor: pointer;
+    color: orange !important;
 }
 </style>
