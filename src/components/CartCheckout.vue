@@ -134,4 +134,7 @@ export default {
   font-size: 15px;
   border-radius: 3px;
 }
+  a{
+    color: white;
+  }
 </style>
