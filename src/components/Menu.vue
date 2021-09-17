@@ -6,13 +6,13 @@
     <nav class="nav">
       <ul class="nav-links">
         <li class="link">
-          <router-link to="/">Products</router-link>
+          <router-link to="/" style="margin-left:400px;"> All Products</router-link>
         </li>
       </ul>
     </nav>
     <slot></slot>
   </header>
-</template>
+  </template>
 
 <script>
 export default {

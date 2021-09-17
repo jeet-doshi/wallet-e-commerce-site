@@ -26,7 +26,12 @@ import mainMenu from './components/Menu';
 import btn from './components/Btn';
 import popupcart from './components/Popupcart';
 import maskBg from './components/Mask';
+<<<<<<< HEAD
 import payment from './components/Payment';
+=======
+// import footer from './components/Footer.vue'
+
+>>>>>>> e0e8205ec63b4891c5fb85f48b2021894181b710
 
 export default {
   components: {
@@ -71,6 +76,7 @@ export default {
 
   .container {
     width: 100%;
+    background-color: #dff9f6;
   }
 
   .cart {
