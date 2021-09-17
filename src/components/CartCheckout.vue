@@ -12,7 +12,9 @@
     </ul>
     <div v-if="!hasProduct()" class="checkout-message">
       <h3>No products...</h3>
-      <router-link to="./">Back to list of products</router-link>
+      <button class="paybtn">
+      <router-link to="./">Back to products</router-link>
+      </button>
     </div>
     <h3 class="total" v-if="hasProduct()">
       Total: Rs {{ totalPrice() }}
