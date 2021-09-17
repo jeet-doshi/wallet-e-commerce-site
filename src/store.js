@@ -90,7 +90,7 @@ export default new Vuex.Store({
         name: 'Wildhorn Carter Mens wallet',
         price: 1400,
         orgprice: 2500,
-        image: 'https://i.imgur.com/9RC8c9C.jpg',
+        image: 'https://i.imgur.com/gF4PPCb.jpg',
         details: 'TOP GRAIN LEATHER MENS WALLET LEATHER: This Wallet for men leather stylish Made in Exclusive High Quality Leather, Well Designed wallet men stylish leather By Skilled Handcraft Man, Durable Cloth Lining Used, Designed To Accommodate maximum needs. Each RFID Wallets for men Has Unique Natural Grain Of Genuine Leather Wallet for Men',
       },
       {
