@@ -3,7 +3,7 @@
   <div class="card">
     <h2 class="visa">VISA</h2>
     <h3 class="num">1234 5678 9012 3456</h3>
-      <h4>Name<br>Sachin</h4>
+      <h4>Name<br>ABCD</h4>
       <h4>EXP<br>10/21</h4>
       <h4>CVC<br>123</h4>
   </div>
@@ -12,7 +12,7 @@
       <h1>Payment Details</h1>
       <form>
      <!--   <label>Name</label>-->
-        <input id="name" type="name" value="Sachin">
+        <input id="name" type="name" value="ABCD">
        <!-- <label>Card Number</label>-->
         <input type="text" value="1234 5678 9012 3456">
       <!--  <label>Expiration Date</label>-->
