@@ -1,25 +1,27 @@
 <template>
-  <div class="container">
-    <mainMenu>
-      <btn btnColor="btn btn-small btn-info btn-popup"
-         :cartIcon="true"
-         @click.native="showPopupCart()">
-         Cart
-        <span class="btn-circle" v-if="hasProduct()">
+  <section style="height: 100%;">
+    <div class="container">
+      <mainMenu>
+        <btn btnColor="btn btn-small btn-info btn-popup"
+             :cartIcon="true"
+             @click.native="showPopupCart()">
+          Cart
+          <span class="btn-circle" v-if="hasProduct()">
            {{ getProductsInCart.length }}
         </span>
-      </btn>
-      <transition name="appear">
-        <popupcart class="cart" v-if="getPopupCart"/>
+        </btn>
+        <transition name="appear" mode="out-in">
+          <popupcart class="cart" v-if="getPopupCart"/>
+        </transition>
+        <MaskBasket v-if="getPopupCart" @click.native="showPopupCart()"/>
+      </mainMenu>
+      <transition name="leave" mode="out-in">
+        <router-view></router-view>
       </transition>
-      <maskBg v-if="getPopupCart" @click.native="showPopupCart()"/>
-    </mainMenu>
-    <transition name="leave" >
-        <router-view class="router-content"></router-view>
-    </transition>
-    <!-- <maskBg v-if="getPopupCart" @click.native="showPopupCart()"/> -->
-    <footer-section> </footer-section>
-  </div>
+      <!-- <maskBg v-if="getPopupCart" @click.native="showPopupCart()"/> -->
+          <footer-section> </footer-section>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -27,16 +29,16 @@ import { mapGetters, mapActions } from 'vuex';
 import mainMenu from './components/Menu';
 import btn from './components/Btn';
 import popupcart from './components/Popupcart';
-import maskBg from './components/Mask';
 import payment from './components/Payment';
-import FooterSection from './components/FooterSection.vue';
+import FooterSection from './components/FooterSection';
+import MaskBasket from './components/MaskBasket';
 
 export default {
   components: {
+    MaskBasket,
     mainMenu,
     btn,
     popupcart,
-    maskBg,
     payment,
     FooterSection,
   },
@@ -66,7 +68,6 @@ export default {
   html {
     height: 100%;
   }
-  
   body {
     font-family: 'Roboto', sans-serif;
     background-color: #dff9f6;
@@ -108,11 +109,15 @@ export default {
   }
 
   .leave-enter-active, .leave-leave-active {
-    transition: all 1.2s;
+    transition: all 0.5s;
   }
-  .leave-enter, .leave-leave-to {
+  .leave-enter {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-100%);
+  }
+
+  .leave-leave-to {
+    transform: translateX(100%);
   }
 
   .appear-enter-active {
@@ -134,8 +139,4 @@ export default {
     }
   }
 
-  .router-content {
-    height: 100%;
-    background-color: #000;
-  }
 </style>

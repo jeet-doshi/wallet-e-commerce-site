@@ -24,7 +24,6 @@
     </button>
     </h3>
   </div>
-  
   <!-- <div class="footer">
 <div class="container2">
     <div class="footer_child footer_child_1">
@@ -96,7 +95,6 @@ export default {
     margin: 50px auto;
     box-sizing: border-box;
     padding: 1em;
-    height: 1000px
   }
 
   .checkout-list {

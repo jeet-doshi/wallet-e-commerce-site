@@ -10,7 +10,7 @@
       </div>
     </transition>
     <transition name="fade">
-      <maskBg v-show="showModal" @click="closeModal()"/>
+      <MaskBasket v-show="showModal" @click="closeModal()"/>
     </transition>
   </div>
 </template>
@@ -18,12 +18,12 @@
 <script>
 import { mapGetters, mapActions } from 'vuex';
 import btn from './Btn';
-import maskBg from './Mask';
+import MaskBasket from './MaskBasket';
 
 export default {
   components: {
     btn,
-    maskBg,
+    MaskBasket,
   },
   computed: {
     ...mapGetters({

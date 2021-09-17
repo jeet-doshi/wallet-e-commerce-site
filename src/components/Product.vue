@@ -51,37 +51,6 @@
     </li>
   </ul>
 </div>
-<!-- <div class="footer">
-<div class="container2">
-    <div class="footer_child footer_child_1">
-        <img src="https://i.imgur.com/ruPamPO.png" width="300px" height="100px">
-        <br />
-        <h1>Wallet Town</h1>
-    </div>
-    <div class="footer_child">
-        <ul>
-            <li class="first">Quick Links</li>
-            <li class="linker">
-              <router-link to="/" style="color:white">Products</router-link>
-            </li>
-            <li class="linker">
-              <router-link to="/checkout" style="color:white">Cart</router-link>
-            </li>
-        </ul>
-    </div>
-    <div class="footer_child">
-        <ul>
-            <li class="first">Contact Us</li>
-            <li>
-                29th Street, plot 304,
-                Washington, 410206 USA.
-            </li>
-            <li>+91-9087645364</li>
-            <li>enquiry@wallettown.com</li>
-        </ul>
-    </div>
-</div> 
-</div> -->
 </div>
 </template>
 
@@ -125,7 +94,6 @@ export default {
 <style scoped>
   .product-box {
     width: 800px;
-    height: 400px;
     margin: 50px auto;
     box-sizing: border-box;
     padding: 1.5em;
