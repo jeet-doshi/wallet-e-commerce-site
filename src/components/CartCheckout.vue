@@ -95,7 +95,6 @@ export default {
     margin: 50px auto;
     box-sizing: border-box;
     padding: 1em;
-    height: 1000px
   }
 
   .checkout-list {

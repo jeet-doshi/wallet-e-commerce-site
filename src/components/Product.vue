@@ -94,7 +94,6 @@ export default {
 <style scoped>
   .product-box {
     width: 800px;
-    height: 400px;
     margin: 50px auto;
     box-sizing: border-box;
     padding: 1.5em;

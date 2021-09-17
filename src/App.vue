@@ -1,25 +1,28 @@
 <template>
-  <div class="container">
-    <mainMenu>
-      <btn btnColor="btn btn-small btn-info btn-popup"
-         :cartIcon="true"
-         @click.native="showPopupCart()">
-         Cart
-        <span class="btn-circle" v-if="hasProduct()">
+  <section style="height: 100%;">
+    <div class="container">
+      <mainMenu>
+        <btn btnColor="btn btn-small btn-info btn-popup"
+             :cartIcon="true"
+             @click.native="showPopupCart()">
+          Cart
+          <span class="btn-circle" v-if="hasProduct()">
            {{ getProductsInCart.length }}
         </span>
-      </btn>
-      <transition name="appear">
-        <popupcart class="cart" v-if="getPopupCart"/>
+        </btn>
+        <transition name="appear" mode="out-in">
+          <popupcart class="cart" v-if="getPopupCart"/>
+        </transition>
+        <MaskBasket v-if="getPopupCart" @click.native="showPopupCart()"/>
+      </mainMenu>
+      <transition name="leave" mode="out-in">
+        <router-view></router-view>
       </transition>
-      <MaskBasket v-if="getPopupCart" @click.native="showPopupCart()"/>
-    </mainMenu>
-    <transition name="leave" >
-        <router-view class="router-content"></router-view>
-    </transition>
-    <!-- <maskBg v-if="getPopupCart" @click.native="showPopupCart()"/> -->
-    <footer-section> </footer-section>
-  </div>
+      <!-- <maskBg v-if="getPopupCart" @click.native="showPopupCart()"/> -->
+      <!--    <footer-section> </footer-section>-->
+      <div style="background-color: #ba0e44; width: 100%">Hello</div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -69,7 +72,7 @@ export default {
   body {
     font-family: 'Roboto', sans-serif;
     background-color: #dff9f6;
-    /*height: 100%;*/
+    height: 100%;
   }
 
   a {
@@ -107,11 +110,15 @@ export default {
   }
 
   .leave-enter-active, .leave-leave-active {
-    transition: all 1.2s;
+    transition: all 0.5s;
   }
-  .leave-enter, .leave-leave-to {
+  .leave-enter {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-100%);
+  }
+
+  .leave-leave-to {
+    transform: translateX(100%);
   }
 
   .appear-enter-active {
@@ -133,8 +140,4 @@ export default {
     }
   }
 
-  .router-content {
-    height: 100%;
-    background-color: #000;
-  }
 </style>
