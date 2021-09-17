@@ -3,7 +3,7 @@
     <ul class="checkout-list">
       <transition-group name="fade">
       <li v-for="(product, index) in getProductsInCart" :key="index" class="checkout-product">
-        <img :src="product.image" alt="" class="product-image">
+        <img :src="product.image" alt=""  width="100px" height="90px" class="product-image">
         <h3 class="product-name">{{ product.name }}</h3>
         <span class="product-price">Rs {{ product.price }} </span>
         <button class="product-remove" @click="remove(index)">X</button>
@@ -16,7 +16,7 @@
     </div>
     <h3 class="total" v-if="hasProduct()">
       Total: Rs {{ totalPrice() }}
-    <button>
+    <button class="paybtn">
           <router-link to="/payment">Payment</router-link>
     </button>
     </h3>
@@ -123,14 +123,15 @@ export default {
     transform: translateX(-40px);
     opacity: 0;
   }
-  .button{
-  background-color: #4CAF50; /* Green */
+  .paybtn{
+  background-color: #BA0E44;
   border: none;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
+  border-radius: 3px;
 }
 </style>

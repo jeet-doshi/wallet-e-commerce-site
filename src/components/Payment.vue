@@ -128,7 +128,7 @@ button{
   width:100%;
   padding: 10px 20px;
   margin: 3px 0;
-  background-color: #96e7ba;
+  background-color: #00008B;
   border: none;
   color: white;
   padding: 15px 32px;

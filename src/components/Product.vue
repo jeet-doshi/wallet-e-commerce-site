@@ -21,7 +21,7 @@
       <btn btnColor="btn btn-large btn-info"
           @click.native="openModal()">
         More Info
-      </btn>  
+      </btn>
       <btn btnColor="btn btn-large btn-sucess" :cartIcon="true"
       @click.native="addProductToCart(currentProduct)">
         Buy Now
