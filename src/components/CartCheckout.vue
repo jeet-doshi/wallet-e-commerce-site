@@ -24,7 +24,6 @@
     </button>
     </h3>
   </div>
-  
   <!-- <div class="footer">
 <div class="container2">
     <div class="footer_child footer_child_1">

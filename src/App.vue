@@ -29,7 +29,7 @@ import btn from './components/Btn';
 import popupcart from './components/Popupcart';
 import maskBg from './components/Mask';
 import payment from './components/Payment';
-import FooterSection from './components/FooterSection.vue';
+import FooterSection from './components/FooterSection';
 
 export default {
   components: {
@@ -66,7 +66,6 @@ export default {
   html {
     height: 100%;
   }
-  
   body {
     font-family: 'Roboto', sans-serif;
     background-color: #dff9f6;
