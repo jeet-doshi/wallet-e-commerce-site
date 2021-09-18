@@ -2,7 +2,7 @@
 <div>
   <ul class="listOfProducts">
     <li v-for="(product, index) in products" :key="index" class="product">
-      <img :src="product.image" alt=""  width="300px">
+      <img :src="product.image" alt=""  width="300px" height="300px">
       <router-link to="/product-details">
         <h2 class="product-name"
             @click="addCurrentProduct(product)">

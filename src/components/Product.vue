@@ -9,14 +9,10 @@
       <h2 class="product-title">{{ currentProduct.name }}</h2>
       <span class="product-price">Rs {{ currentProduct.price }}</span>
       <span class="product-orgprice">Rs <strike>{{ currentProduct.orgprice }}</strike></span>
-      <div style="margin-top: 10px;"> Available Colors: </div>
-      <div class="color-options">
-        <!-- <div> Colors: </div> -->
-        <div class="figure black"></div>
-        <div class="figure blue"></div>
-        <div class="figure green"></div>
-        <div class="figure brown"></div>
-      </div>
+      <!-- <div class="color-options">
+         <div style="margin-top: 20px; margin-right: 20px;"> Add Quantity: </div>
+         <input type="number" style="width: 100px; height: 30px; margin-top: 10px;" value="1" >
+      </div> -->
 
       <btn btnColor="btn btn-large btn-info"
           @click.native="openModal()">
@@ -29,28 +25,7 @@
     </div>
     <modal>{{ currentProduct.details }}</modal>
   </div>
-
-  <ul class="listOfProducts">
-    <li v-for="(product, index) in suggestedproducts" :key="index" class="product">
-      <img :src="product.image" alt="" height="300px" width="300px">
-      <router-link to="/product-details">
-        <h2 class="product-name"
-            @click="addCurrentProduct(product)">
-          {{ product.name }}
-        </h2>
-      </router-link>
-      <div class="product-price">
-        <span>Rs {{ product.price }}</span>
-        <span>Rs <strike>{{ product.orgprice }}</strike></span>
-      </div>
-      <btn btnColor="btn btn-large btn-sucess"
-          :cartIcon="true"
-          @click.native="addProductToCart(product)">
-        Add to cart
-      </btn>
-    </li>
-  </ul>
-</div>
+  </div>
 </div>
 </template>
 
@@ -162,70 +137,4 @@ export default {
 .brown {
   background-color: brown ;
 }
-
-/* CSS for footer */
-   .container2{
-    display: flex;
-    width:100%;
-    background-color: DIMGREY;
-    margin-top: 5px;
-    margin-left: 350px;
-}
-.footer{
-    width: 100%;
-    height: 225px;
-    /* margin-top: 750px; */
-    background-color: DIMGREY;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    bottom: 0px;
-    position: fixed;
-}
-.footer_child{
-    height: 200px;
-    width: 25%;
-    margin-left: 20px;
-    font-family: segoe UI;
-    display: flex;
-    justify-content: center;
-    background-color: DIMGREY;
-}
-.footer_child_1{
-    align-items: center;
-    color: white;
-    font-size: 30px;
-    background-color: DIMGREY;
-    flex-direction: column;
-}
-
-.footer_child_4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: DIMGREY;
-}
-
-.first{
-    font-size: 22px;
-}
-
-.footer_child ul {
-    margin-top: 40px;
-    background-color: DIMGREY;
-}
-
-.footer_child li {
-    list-style-type: none;
-    margin-bottom: 10px;
-    color: white;
-    background-color:DIMGREY;
-}
-
-.linker:hover{
-    color: orange;
-    cursor: pointer;
-
-}
-
 </style>
