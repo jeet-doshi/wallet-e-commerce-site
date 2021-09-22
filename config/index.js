@@ -48,9 +48,9 @@ module.exports = {
     index: path.resolve(__dirname, '../dist/index.html'),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../dist/'),
+    assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: 'https://github.com/jeet-doshi/wallet-e-commerce-site/tree/master/dist',
+    assetsPublicPath: 'https://github.com/jeet-doshi/wallet-e-commerce-site/tree/master/dist/',
 
     /**
      * Source Maps
