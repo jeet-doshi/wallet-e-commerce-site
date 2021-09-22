@@ -50,7 +50,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: 'https://github.com/jeet-doshi/wallet-e-commerce-site/tree/master/dist/',
+    assetsPublicPath: 'https://wallet-e-commerce-site-one.vercel.app/dist/',
 
     /**
      * Source Maps
